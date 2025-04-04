@@ -1,0 +1,231 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #F9FAF8; /* 修正漏掉的分號 */
+}
+
+header {
+  background-color: #1F2937;
+  color: white;
+  padding: 20px 15%;
+}
+
+.header-text {
+  align-items: center;
+  margin-bottom: 30px; /* 減少間距以改善佈局 */
+}
+
+.logo {
+  font-size: 24px;
+  color: #F9FAF8;
+  font-weight: bold;
+}
+
+.header-links {
+  display: flex;
+  justify-content: end;
+  gap: 15px; /* 調整間距以更緊湊 */
+}
+
+.header-links a {
+  color: #E5E7EB;
+  text-decoration: none;
+  font-size: 18px;
+  transition: color 0.3s;
+  /* 新增過渡效果 */
+}
+
+.header-links a:hover {
+  color: #3882F6;
+  /* 新增懸停效果 */
+}
+
+.header-image {
+  background-color: gray;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  margin-top: 20px; /* 減少頂部間距 */
+  width: 70%;
+  height: 200px;
+}
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px; /* 調整間距 */
+  padding-bottom: 100px;
+}
+
+.header-text {
+  flex: 1;
+}
+
+.header-text h1 {
+  font-size: 48px;
+  font-weight: 800;
+  color: #F9FAF8;
+  margin-bottom: 10px;
+}
+
+.header-text p {
+  font-size: 18px;
+  color: #E5E7EB;
+  margin-bottom: 15px;
+}
+
+.header-text button {
+  background-color: #3882F6;
+  color: white;
+  border: none;
+  padding: 10px 30px;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.header-text button:hover {
+  background-color: #2C6BCF;
+  /* 新增懸停效果 */
+}
+
+.info-section {
+  max-width: 800px;
+  margin: 0 auto;
+  padding-top: 40px;
+  text-align: center;
+  padding-bottom: 50px;
+}
+ /* 水平置中 */
+ /* 標題置中 */
+/* 調整底部間距 */
+
+.info-boxs {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 30px;
+  margin-top: 20px;
+}
+/* info-box在容器中 */
+/* 自動換行 */
+
+.info-box {
+  width: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+/* 主軸控制垂直方向 */
+/* align控制交叉軸(與 flex-direction 垂直的方向) */
+
+.box-image {
+  width: 100px;
+  height: 100px;
+  border: 2px solid #3882F6;
+  border-radius: 10px;
+}
+
+.info-box p {
+  margin-top: 10px;
+  font-size: 14px;
+  color: #666;
+  text-align: center;
+}
+/* Quote section */
+.saying {
+  background-color: #E5E7EB;
+  padding: 100px;
+}
+
+.saying-text {
+  font-size: 28px; 
+  font-weight: 300;
+  font-style: italic;
+  color: #1F2937;
+  margin-bottom: 20px;
+  width: auto; 
+  margin:0 auto;
+  padding: 0 20px;
+  line-height: 1.5;
+}
+/* 斜體 */
+/* 水平置中 */
+/* 左右邊距 */
+/* 行高增加可讀性 */
+
+.saying-author{
+  font-size: 18px;
+  font-weight: bold;
+  color: #1F2937;
+  text-align: right;
+  margin-top: 20px;
+  /* 標題靠右 */
+  /* 上邊距 */
+}
+
+.cta-box {
+  padding: 100px 15%;
+  display: flex; 
+  background-color: #3882F6;
+  border-radius: 8px;
+  padding: 50px 100px;
+  margin:80px auto;
+  justify-content: center;
+  max-width: 1000px;
+/* 內邊距 */
+/* 外邊距 */
+/* cta=行動呼籲 */
+}
+
+.cta-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap:20px;
+  color: white;
+  /* 文字靠左，按鈕靠右 */
+  /* 垂直置中 */
+  /* 按鈕跟文字的間距 */
+}
+
+.cta-button {
+  background-color: transparent;
+  color: white;
+  border: 2px solid white;
+  padding: 10px 30px;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s, transform 0.3s;
+  justify-content: flex-end;
+  /* 新增過渡效果 */
+}
+
+.cta-box button:hover {
+  background-color: #2C6BCF;
+  transform: scale(1.05);
+  /* 懸停效果 */
+}
+
+footer {
+  background-color: #1F2937;
+  color: white;
+  text-align: center;
+  padding: 40px;
+  margin-top: auto;
+  font-size: 14px;
+  
+}
